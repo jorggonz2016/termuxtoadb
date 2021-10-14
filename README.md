@@ -1,24 +1,13 @@
-# Termux to ADB+SSH autosetup
-This uses SSH to passthough your termux session to adb on your desktop. The connection is passed from your cell phone to your computer via adb. This script uses port 8022 instead of the standard ssh port because android sometimes doesnt like to port over port 22 and if your computer is aready running a ssh server this script will not interfere.
+# WIP GUI Version
+### This is a python WIP version that only works on windows at the moment.
 
-# Quick setup
-
-For linux desktops:
-
-wget https://raw.githubusercontent.com/Epicminer256/termuxtoadb/main/setupsshfiles.sh && chmod +x ./setupsshfiles.sh && ./setupsshfiles.sh
-
-For windows desktops:
-
-curl https://raw.githubusercontent.com/Epicminer256/termuxtoadb/main/setupsshfiles.bat --output setupsshfiles.bat && echo. && echo. && setupsshfiles.bat
-
+## Why you should use this
+### This program gives you full desktop management of your phone with little time wasted on the setup. Just plug in your phone and type one command. This script also avoids using the port 22 because it fixes a problem newer phones have where you cannot access certain ports.
 
 # Your steps:
 
-1) On termux, do "apt install openssh"
-2) Now you type "sshd -p8022" into termux
-3) Give Termux a password with "passwd"
-4) Make sure on windows your adb path is good, so check the second line of your script
-5) launch this script and it will set you up in around 10-15 seconds
-General windows file explorer tip, hold shift and click on adb.exe. There should be a option to copy the path to the file.
+1) On termux, do "apt install openssh" and "sshd -p8022"
+2) Just do what the program says.
 
-Now you have a autoconnect script that you can use at any time. Good luck! I also recommend that you setup termux to run sshd on boot.
+## General windows file explorer tip, 
+##### hold shift and click on adb.exe. There should be a option to copy the path to the file.
