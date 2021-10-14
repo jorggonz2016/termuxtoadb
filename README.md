@@ -10,4 +10,4 @@
 2) Just do what the program says.
 
 ## General windows file explorer tip, 
-##### hold shift and click on adb.exe. There should be a option to copy the path to the file.
+##### hold shift and right click on adb.exe. There should be a option to copy the path to the file.
